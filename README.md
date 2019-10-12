@@ -1,4 +1,6 @@
-# V2Ray-Node-Need-File
+# V2Ray With SSpanel File
+
+Thanks a lot to @Anankke 、 V2ray Team、 @rico93
 
 ## For NODE
 ```
@@ -33,7 +35,7 @@ php composer.phar install
 curl -sS https://getcomposer.org/installer | php
 mv composer.phar /usr/local/bin/composer
 composer install
-``` 
+```
 if composer output like that
 ```
 Loading composer repositories with package information
