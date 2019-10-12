@@ -188,8 +188,8 @@ extract(){
         colorEcho ${RED} "Failed to extract V2Ray."
         return 2
     fi
-    if [[ -d "/tmp/v2ray/v2ray-${NEW_VER}-linux-${VDIS}" ]]; then
-      VSRC_ROOT="/tmp/v2ray/v2ray-${NEW_VER}-linux-${VDIS}"
+    if [[ -d "/tmp/v2ray/v2ray-sspanel-v3-mod_Uim-plugin-4.18.2" ]]; then
+      VSRC_ROOT="/tmp/v2ray/v2ray-sspanel-v3-mod_Uim-plugin-4.18.2"
     fi
     return 0
 }
