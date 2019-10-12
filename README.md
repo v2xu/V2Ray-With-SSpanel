@@ -1,6 +1,6 @@
 # V2Ray With SSpanel File
 
-Thanks a lot to @Anankke 、 V2ray Team、 @rico93
+**Thanks a lot to @Anankke 、 V2ray Team、 @rico93**
 
 ## For NODE
 ```
@@ -15,7 +15,25 @@ service v2ray restart
 service v2ray status
 ```
 
+
+
+**DO NOT**  forget to config your sspanel like this.
+
+> `YourNodeAddress;PortNum;AlterId;Method;Misc(like:Confuse、path and so more)`
+>
+> e.g:
+>
+> `test.node.1.domain;443;3;ws;tls;path=/`
+>
+> - YourNodeAddress:`test.node.1.domain`
+> - PortNum:`443`
+> - AlterId:`3`
+> - Misc:
+>   - path:`/`
+>   - Confuse:`tls`
+
 ## For PANEL 
+
 1. Install BaoTa and config LNMP with PHP7.2 (more steps see here https://github.com/NS-Sp4ce/ShadowSocksPanelFiles#%E5%AE%89%E8%A3%85%E5%AE%9D%E5%A1%94%E9%9D%A2%E6%9D%BF TO https://github.com/NS-Sp4ce/ShadowSocksPanelFiles#%E5%AE%89%E8%A3%85%E5%AE%9D%E5%A1%94%E9%9D%A2%E6%9D%BF )
 2. Install panel (thanks a lot to ss-panel-uim team)
 ```
