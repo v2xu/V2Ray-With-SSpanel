@@ -129,6 +129,7 @@ downloadV2Ray(){
     mkdir -p /tmp/v2ray
     colorEcho ${BLUE} "Downloading V2Ray."
     DOWNLOAD_LINK="https://github.com/ns-sp4ce/V2Ray-Node-Need-File/releases/download/${NEW_VER}/v2ray-linux-${VDIS}.zip"
+    echo DOWNLOAD_LINK
     curl ${PROXY} -L -H "Cache-Control: no-cache" -o ${ZIPFILE} ${DOWNLOAD_LINK}
     if [ $? != 0 ];then
         colorEcho ${RED} "Failed to download! Please check your network or try again."
