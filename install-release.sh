@@ -15,7 +15,7 @@ ARCH=""
 VDIS="64"
 ZIPFILE="/tmp/v2ray/v2ray.zip"
 V2RAY_RUNNING=0
-VSRC_ROOT="/tmp/v2ray/v2ray-sspanel-v3-mod_Uim-plugin-4.18.2"
+VSRC_ROOT="/tmp/v2ray"
 EXTRACT_ONLY=0
 ERROR_IF_UPTODATE=0
 
@@ -128,7 +128,7 @@ downloadV2Ray(){
     rm -rf /tmp/v2ray
     mkdir -p /tmp/v2ray
     colorEcho ${BLUE} "Downloading V2Ray."
-    DOWNLOAD_LINK="https://github.com/v2rayv3/v2ray-sspanel-v3-mod_Uim-plugin/archive/v4.18.2.zip"
+    DOWNLOAD_LINK="https://github.com/ns-sp4ce/V2Ray-Node-Need-File/releases/download/${NEW_VER}/v2ray-linux-${VDIS}.zip"
     curl ${PROXY} -L -H "Cache-Control: no-cache" -o ${ZIPFILE} ${DOWNLOAD_LINK}
     if [ $? != 0 ];then
         colorEcho ${RED} "Failed to download! Please check your network or try again."
@@ -188,8 +188,8 @@ extract(){
         colorEcho ${RED} "Failed to extract V2Ray."
         return 2
     fi
-    if [[ -d "/tmp/v2ray/v2ray-sspanel-v3-mod_Uim-plugin-4.18.2" ]]; then
-      VSRC_ROOT="/tmp/v2ray/v2ray-sspanel-v3-mod_Uim-plugin-4.18.2"
+    if [[ -d "/tmp/v2ray/v2ray-${NEW_VER}-linux-${VDIS}" ]]; then
+      VSRC_ROOT="/tmp/v2ray/v2ray-${NEW_VER}-linux-${VDIS}"
     fi
     return 0
 }
@@ -210,7 +210,7 @@ getVersion(){
         if [[ ${CUR_VER} != v* ]]; then
             CUR_VER=v${CUR_VER}
         fi
-        TAG_URL="https://api.github.com/repos/rico93/v2ray-sspanel-v3-mod_Uim-plugin/releases/latest"
+        TAG_URL="https://api.github.com/repos/ns-sp4ce/V2Ray-Node-Need-File/releases/latest"
         NEW_VER=`curl ${PROXY} -s ${TAG_URL} --connect-timeout 10| grep 'tag_name' | cut -d\" -f4`
         if [[ ${NEW_VER} != v* ]]; then
           NEW_VER=v${NEW_VER}
@@ -290,15 +290,15 @@ installV2Ray(){
     if [[ ! -f "/etc/v2ray/config.json" ]]; then
         mkdir -p /etc/v2ray
         mkdir -p /var/log/v2ray
-        cp "${VSRC_ROOT}/vpoint_vmess_freedom.json" "/etc/v2ray/config.json"
+        cp "${VSRC_ROOT}/config.json" "/etc/v2ray/config.json"
         if [[ $? -ne 0 ]]; then
             colorEcho ${YELLOW} "Failed to create V2Ray configuration file. Please create it manually."
             return 1
         fi
 
-        sed -i "s|"https://google.com"|"${PANELURL}"|g" "/etc/v2ray/config.json"
-        sed -i "s/"55fUxDGFzH3n"/"${PANELKEY}"/g" "/etc/v2ray/config.json"
-        sed -i "s/123456,/${NODEID},/g" "/etc/v2ray/config.json"
+        sed -i "s|"SS_PANEL_URL"|"${PANELURL}"|g" "/etc/v2ray/config.json"
+        sed -i "s/"SS_PANEL_MU_KEY"/"${PANELKEY}"/g" "/etc/v2ray/config.json"
+        sed -i "s/SS_PANEL_NODE_ID,/${NODEID},/g" "/etc/v2ray/config.json"
 
         colorEcho ${BLUE} "PANELURL:${PANELURL}"
         colorEcho ${BLUE} "PANELKEY:${PANELKEY}"

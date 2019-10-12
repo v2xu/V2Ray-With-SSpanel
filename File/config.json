@@ -93,11 +93,11 @@
   },
   "stats": {},
   "sspanel": {
-      "nodeid": 3,
+      "nodeid": SS_PANEL_NODE_ID,
       "checkRate": 60,
       "SpeedTestCheckRate": 6,
-      "panelUrl": "http://149.248.5.96",
-      "panelKey": "liHjEgyf2CBgQITOwasZ1234",
+      "panelUrl": "SS_PANEL_URL",
+      "panelKey": "SS_PANEL_MU_KEY",
       "downWithPanel": 1,
       "mysql": {
         "host": "5x.xxx.xxx.x1",
