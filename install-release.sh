@@ -102,6 +102,8 @@ sysArch(){
     ARCH=$(uname -m)
     if [[ "$ARCH" == "i686" ]] || [[ "$ARCH" == "i386" ]]; then
         VDIS="32"
+    elif [[ "$ARCH" == "x86_64" ]]; then
+        VDIS="x86_64"
     elif [[ "$ARCH" == *"armv7"* ]] || [[ "$ARCH" == "armv6l" ]]; then
         VDIS="arm"
     elif [[ "$ARCH" == *"armv8"* ]] || [[ "$ARCH" == "aarch64" ]]; then
