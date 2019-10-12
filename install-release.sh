@@ -15,7 +15,7 @@ ARCH=""
 VDIS="64"
 ZIPFILE="/tmp/v2ray/v2ray.zip"
 V2RAY_RUNNING=0
-VSRC_ROOT="/tmp/v2ray"
+VSRC_ROOT="/tmp/v2ray/v2ray-sspanel-v3-mod_Uim-plugin-4.18.2"
 EXTRACT_ONLY=0
 ERROR_IF_UPTODATE=0
 
