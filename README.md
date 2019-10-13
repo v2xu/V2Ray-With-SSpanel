@@ -4,7 +4,7 @@
 
 ## For NODE
 ```
-bash <(curl -L -s  https://raw.githubusercontent.com/NS-Sp4ce/V2Ray-Node-Need-File/master/install-release.sh) --panelurl https://xxxx --panelkey xxxx --nodeid NODEID
+bash <(curl -L -s  https://raw.githubusercontent.com/NS-Sp4ce/V2Ray-With-SSpanel/master/install-release.sh) --panelurl https://xxxx --panelkey xxxx --nodeid NODEID
 
 # restart v2ray node services
 
