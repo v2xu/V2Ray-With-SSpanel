@@ -8,11 +8,15 @@ bash <(curl -L -s  https://raw.githubusercontent.com/NS-Sp4ce/V2Ray-With-SSpanel
 
 # restart v2ray node services
 
-service v2ray restart
+systemctl start v2ray
 
 # checkout v2ray status
 
-service v2ray status
+systemctl status v2ray
+
+# enable auto start
+
+systemctl enable v2ray
 ```
 
 
