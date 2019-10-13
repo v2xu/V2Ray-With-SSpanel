@@ -97,7 +97,7 @@ cd /var/_swap_
 dd if=/dev/zero of=swapfile bs=1M count=2000
 mkswap swapfile
 swapon swapfile
-echo “/var/_swap_/swapfile none swap sw 0 0” >> /etc/fstab
+echo "/var/_swap_/swapfile none swap sw 0 0" >> /etc/fstab
 free -m
 ```
 and run `composer install` again.
