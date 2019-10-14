@@ -82,7 +82,13 @@
           "domain": [
             "regexp:(api|ps|sv|offnavi|newvector|ulog\\.imap|newloc)(\\.map|)\\.(baidu|n\\.shifen)\\.com",
             "regexp:(.+\\.|^)(360|so)\\.(cn|com)",
-            "regexp:(.?)(xunlei|sandai|Thunder|XLLiveUD)(.)"
+            "regexp:(.?)(xunlei|sandai|Thunder|XLLiveUD)(.)",
+            "regexp:(.*.||)(dafahao|minghui|dongtaiwang|epochtimes|ntdtv|falundafa|wujieliulan).(org|com|net)",
+            "regexp:(Subject|HELO|SMTP)",
+            "regexp:(.+.|^)(360|so).(cn|com)",
+            "regexp:(torrent|.torrent|peer_id=|info_hash|get_peers|find_node|BitTorrent|announce_peer|announce.php?passkey=)",
+            "regexp:(^.*@)(guerrillamail|guerrillamailblock|sharklasers|grr|pokemail|spam4|bccto|chacuo|027168).(info|biz|com|de|net|org|me|la)",
+            "regexp:BitTorrent protocol"
           ],
           "outboundTag": "blocked",
           "type": "field"
