@@ -117,3 +117,26 @@ php xcat initQQWry
 php xcat resetTraffic
 php xcat initdownload
 ```
+
+# For Aliyun User
+Uninstall YunDun
+```
+[Windows]
+
+http://update.aegis.aliyun.com/download/uninstall.bat?spm=a2c4g.11186623.2.5.h6JSZc&file=uninstall.bat 
+
+
+[linux]
+
+wget http://update.aegis.aliyun.com/download/uninstall.sh
+chmod +x uninstall.sh
+./uninstall.sh
+wget http://update.aegis.aliyun.com/download/quartz_uninstall.sh
+chmod +x quartz_uninstall.sh
+./quartz_uninstall.sh
+pkill aliyun-service
+rm  -fr /etc/init.d/agentwatch /usr/sbin/aliyun-service
+rm  -rf /usr/local/aegis*
+rm -rf /usr/sbin/aliyun*
+chkconfig --del cloudmonitor
+```
