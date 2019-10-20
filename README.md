@@ -10,7 +10,7 @@ bash <(curl -L -s  https://raw.githubusercontent.com/NS-Sp4ce/V2Ray-With-SSpanel
 
 systemctl start v2ray
 
-# checkout v2ray status
+# recheck v2ray status
 
 systemctl status v2ray
 
@@ -41,7 +41,7 @@ systemctl enable v2ray
 ```
 systemctl start v2ray && systemctl enable v2ray
 # checkout v2ray status
-# systemctl status v2ray
+systemctl status v2ray
 ● v2ray.service - V2Ray Service
    Loaded: loaded (/etc/systemd/system/v2ray.service; enabled; vendor preset: disabled)
    Active: active (running) since Sat 2019-10-12 18:37:48 CST; 11s ago
