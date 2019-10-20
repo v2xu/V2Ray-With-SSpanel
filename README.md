@@ -3,6 +3,7 @@
 **Thanks a lot to @Anankke 、 V2ray Team、 @rico93**
 
 ## For NODE
+
 ```
 bash <(curl -L -s  https://raw.githubusercontent.com/NS-Sp4ce/V2Ray-With-SSpanel/master/install-release.sh) --panelurl https://xxxx --panelkey xxxx --nodeid NODEID
 
@@ -19,7 +20,13 @@ systemctl status v2ray
 systemctl enable v2ray
 ```
 
+**NOTE**
 
+```
+panelurl : Your SSpanel URL
+panelkey : Your SSpanel `mukey`, you can find it in `/path/to/wwwroot/config/.config.php`
+nodeid : Your Node ID, you can set this in your SSpanel
+```
 
 **DO NOT**  forget to config your sspanel like this.
 
@@ -58,12 +65,6 @@ Oct 12 18:37:52 vultr.guest v2ray[10450]: 2019/10/12 18:37:52 [Warning] SSPanelP
 Oct 12 18:37:52 vultr.guest v2ray[10450]: 2019/10/12 18:37:52 [Warning] SSPanelPlugin: After Update, Current Users 1 need to be add 0 need to be romved 0
 
 ```
-
-
-
- 
-
-
 
 ## For PANEL 
 
