@@ -19,6 +19,19 @@ systemctl status v2ray
 
 systemctl enable v2ray
 ```
+### For MySQL Connect
+
+reset this config to right setting
+
+```
+      "mysql": {
+        "host": "5x.xxx.xxx.x1",
+        "port": 3306,
+        "user": "wwwxxxhk",
+        "password": "nbdiD.xxxxT3Mj",
+        "dbname": "wwwxxxhk"
+      },
+```
 
 **NOTE**
 
@@ -118,6 +131,7 @@ php xcat initQQWry
 php xcat resetTraffic
 php xcat initdownload
 ```
+
 
 # For Aliyun User
 Uninstall YunDun
