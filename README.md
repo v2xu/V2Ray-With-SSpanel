@@ -2,6 +2,9 @@
 
 **Thanks a lot to @Anankke 、 V2ray Team、 @rico93**
 
+**Note:**
+> This edition is only for early adopters experience and technical exchanges. If you want to experience the full-featured edition, please contact @rico93 or [telegram channel](https://t.me/rico_v2)
+
 ## For NODE
 
 ```
