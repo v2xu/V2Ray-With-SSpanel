@@ -2,6 +2,8 @@
 
 **Thanks a lot to @Anankke 、 V2ray Team、 @rico93**
 
+> # For some reason, I will NOT ANSWER ANY ISSUES about this repo.
+
 **Note:**
 > This edition is only for early adopters experience and technical exchanges. If you want to experience the full-featured edition, please contact @rico93 or [telegram channel](https://t.me/rico_v2)
 
