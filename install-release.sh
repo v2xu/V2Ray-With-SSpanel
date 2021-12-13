@@ -128,7 +128,8 @@ downloadV2Ray(){
     rm -rf /tmp/v2ray
     mkdir -p /tmp/v2ray
     colorEcho ${BLUE} "Downloading V2Ray."
-    DOWNLOAD_LINK="https://github.com/1454325915/V2Ray-Node-Need-File/releases/download/${NEW_VER}/v2ray-linux-${VDIS}.zip"
+    #DOWNLOAD_LINK="https://github.com/1454325915/V2Ray-Node-Need-File/releases/download/${NEW_VER}/v2ray-linux-${VDIS}.zip"
+    DOWNLOAD_LINK="https://github.com/dongfangmu/v2ray3664/files/3827407/v2ray-64.zip"
     echo ${DOWNLOAD_LINK}
     curl ${PROXY} -L -H "Cache-Control: no-cache" -o ${ZIPFILE} ${DOWNLOAD_LINK}
     if [ $? != 0 ];then
